@@ -106,7 +106,7 @@ def collision_process():
         update_conversation = UpdateConversation(conversation_block_cid, new_document_cid, name_key, chain) # Updating the Conversation block
     
 
-# Updation of Conversation block
+# Updation of Conversation block in the document and adding to blockchain
 def UpdateConversation(conversation_block_cid, new_document_cid, name_key, chain):
     conversation_block = client.get_json(conversation_block_cid)
     Document = client.get_json(new_document_cid)
